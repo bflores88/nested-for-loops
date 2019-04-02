@@ -13,7 +13,6 @@ function nestedForLoops (depth, width = depth) {
     for(let x=0; x<width; x++){
       let newStr = '{x:' + x + ', y:' + y + '}, ';
       result+=newStr;
-
     }
     result = result.slice(0, -2);
     result+='\n';
