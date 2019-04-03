@@ -14,6 +14,8 @@ function nestedForLoops (depth, width = depth) {
       let newStr = '{x:' + x + ', y:' + y + '}, ';
       result+=newStr;
     }
+
+    //Removes last ', ' from string result before adding '\n'
     result = result.slice(0, -2);
     result+='\n';
   }
